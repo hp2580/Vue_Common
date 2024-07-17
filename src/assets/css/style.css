@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:active,
+a:focus,
+button {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+textarea {
+  display: block;
+  font-family: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  /* 구형 브라우저를 위해 사용 */
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+          clip-path: polygon(0 0, 0 0, 0 0);
+  /* inset(50%) 와 동일한 표현 */
+  border: 0;
+}
+
+.bg-primary1 {
+  background-color: #6433f0 !important;
+}
+
+.text-primary1 {
+  color: #6433f0 !important;
+}
+
+.bg-primary2 {
+  background-color: #488be2 !important;
+}
+
+.text-primary2 {
+  color: #488be2 !important;
+}
+
+.bg-secondary1 {
+  background-color: #f5f5f5 !important;
+}
+
+.text-secondary1 {
+  color: #f5f5f5 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.bg-grayeee {
+  background-color: #eee !important;
+}
+
+.text-grayeee {
+  color: #eee !important;
+}
+
+.bg-grayddd {
+  background-color: #ddd !important;
+}
+
+.text-grayddd {
+  color: #ddd !important;
+}
+
+.bg-grayccc {
+  background-color: #ccc !important;
+}
+
+.text-grayccc {
+  color: #ccc !important;
+}
+
+.bg-graybbb {
+  background-color: #bbb !important;
+}
+
+.text-graybbb {
+  color: #bbb !important;
+}
+
+.bg-grayaaa {
+  background-color: #aaa !important;
+}
+
+.text-grayaaa {
+  color: #aaa !important;
+}
+
+.bg-gray999 {
+  background-color: #999 !important;
+}
+
+.text-gray999 {
+  color: #999 !important;
+}
+
+.bg-gray666 {
+  background-color: #666 !important;
+}
+
+.text-gray666 {
+  color: #666 !important;
+}
+
+.bg-gray555 {
+  background-color: #555 !important;
+}
+
+.text-gray555 {
+  color: #555 !important;
+}
+
+.bg-gray333 {
+  background-color: #333 !important;
+}
+
+.text-gray333 {
+  color: #333 !important;
+}
+
+.bg-gray111 {
+  background-color: #111 !important;
+}
+
+.text-gray111 {
+  color: #111 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.bg-bg1 {
+  background-color: #f8f8f8 !important;
+}
+
+.text-bg1 {
+  color: #f8f8f8 !important;
+}
+
+.bg-bg2 {
+  background-color: #f5f5f5 !important;
+}
+
+.text-bg2 {
+  color: #f5f5f5 !important;
+}
+
+.bg-bg3 {
+  background-color: #eff0ff !important;
+}
+
+.text-bg3 {
+  color: #eff0ff !important;
+}
+
+.bg-bg4 {
+  background-color: #f6f6f6 !important;
+}
+
+.text-bg4 {
+  color: #f6f6f6 !important;
+}
+
+.bg-line1 {
+  background-color: #ddd !important;
+}
+
+.text-line1 {
+  color: #ddd !important;
+}
+
+.bg-line2 {
+  background-color: #eee !important;
+}
+
+.text-line2 {
+  color: #eee !important;
+}
+
+.bg-line3 {
+  background-color: #d3d3d3 !important;
+}
+
+.text-line3 {
+  color: #d3d3d3 !important;
+}
+
+.bg-text1 {
+  background-color: #000 !important;
+}
+
+.text-text1 {
+  color: #000 !important;
+}
+
+.bg-text2 {
+  background-color: #333 !important;
+}
+
+.text-text2 {
+  color: #333 !important;
+}
+
+.bg-text3 {
+  background-color: #666 !important;
+}
+
+.text-text3 {
+  color: #666 !important;
+}
+
+.bg-text4 {
+  background-color: #999 !important;
+}
+
+.text-text4 {
+  color: #999 !important;
+}
+
+.bg-text5 {
+  background-color: #a8a8a8 !important;
+}
+
+.text-text5 {
+  color: #a8a8a8 !important;
+}
+
+.bg-active1 {
+  background-color: #2e4295 !important;
+}
+
+.text-active1 {
+  color: #2e4295 !important;
+}
+
+.bg-active2 {
+  background-color: #6b737d !important;
+}
+
+.text-active2 {
+  color: #6b737d !important;
+}
+
+.bg-active3 {
+  background-color: #eaeeff !important;
+}
+
+.text-active3 {
+  color: #eaeeff !important;
+}
+
+.bg-disabled1 {
+  background-color: #f5f5f5 !important;
+}
+
+.text-disabled1 {
+  color: #f5f5f5 !important;
+}
+
+.bg-disabled2 {
+  background-color: #d2d8e0 !important;
+}
+
+.text-disabled2 {
+  color: #d2d8e0 !important;
+}
+
+.bg-disabled3 {
+  background-color: #ccc !important;
+}
+
+.text-disabled3 {
+  color: #ccc !important;
+}
+
+.bg-error1 {
+  background-color: #f33841 !important;
+}
+
+.text-error1 {
+  color: #f33841 !important;
+}
+
+.bg-dim1 {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.text-dim1 {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-regular {
+  font-weight: 400 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.01rem;
+  line-height: 4.5rem;
+}
+
+.h2 {
+  font-size: 2.6rem;
+  letter-spacing: -0.01rem;
+  line-height: 3.6rem;
+}
+
+.h3 {
+  font-size: 2rem;
+  letter-spacing: -0.01rem;
+  line-height: 2.8rem;
+}
+
+.h4 {
+  font-size: 1.8rem;
+  letter-spacing: -0.01rem;
+  line-height: 2.5rem;
+}
+
+.h5 {
+  font-size: 1.6rem;
+  letter-spacing: -0.01rem;
+  line-height: 2.2rem;
+}
+
+/* Base Common */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.content.content-side {
+  padding: 0 1.8rem;
+}
+
+button {
+  cursor: pointer;
+}
