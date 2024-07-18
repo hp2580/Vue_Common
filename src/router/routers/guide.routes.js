@@ -1,12 +1,12 @@
 const container = () => import('@/views/_guide/guide.vue')
-const ruleIntro = () => import('@/views/_guide/convention/ruleIntro.vue')
+const uuSwiper = () => import('@/views/_guide/components/uuSwiper.vue')
 
 // uu-components
 export default {
-  path: '/convention',
-  redirect: '/convention/ruleIntro',
+  path: '/components',
+  redirect: '/components/swiper',
   component: container,
   children: [
-    { component: ruleIntro, path: 'ruleIntro' },
+    { component: uuSwiper, path: 'swiper' },
   ],
 }

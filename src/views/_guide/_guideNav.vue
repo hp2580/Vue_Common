@@ -5,8 +5,8 @@ export default function guideNav() {
       title: 'Components',
       nav: [
         {
-          name: 'Rule',
-          url: `/convention/ruleIntro`,
+          name: 'Swiper',
+          url: `/components/swiper`,
         },
       ],
     },

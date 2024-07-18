@@ -133,7 +133,7 @@ const totalCount = () => {
       <nav>
         <ul class="guide-header-nav is-ia">
           <li>
-            <router-link class="btn btn-guide" to="/convention/ruleIntro" title="퍼블리싱 가이드 페이지 이동">
+            <router-link class="btn btn-guide" to="/components" title="퍼블리싱 가이드 페이지 이동">
               GUIDE
             </router-link>
           </li>
