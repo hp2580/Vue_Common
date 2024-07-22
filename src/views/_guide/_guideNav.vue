@@ -8,6 +8,14 @@ export default function guideNav() {
           name: 'Swiper',
           url: `/components/swiper`,
         },
+        {
+          name: 'Select',
+          url: `/components/select`,
+        },
+        // {
+        //   name: 'Check',
+        //   url: `/components/check`,
+        // },
       ],
     },
   ];

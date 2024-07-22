@@ -12,7 +12,6 @@ const slides = ['1','2','3','4','5','6']
 <template>
   <div class="content-body">
     <section class="section">
-      <!-- @slide-change="e => {index = e.activeIndex}" -->
       <Swiper
         :slides-per-view="perView"
         :slides-per-group="perView"
@@ -32,8 +31,6 @@ const slides = ['1','2','3','4','5','6']
   position: relative;
   height: 30rem;
   padding-bottom: 5rem;
-  .swiper-wrapper {
-  }
   &-slide {
     display: flex;
     justify-content: center;
