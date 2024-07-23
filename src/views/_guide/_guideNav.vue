@@ -12,6 +12,14 @@ export default function guideNav() {
           name: 'Select',
           url: `/components/select`,
         },
+        {
+          name: 'Typography',
+          url: `/components/typography`,
+        },
+        {
+          name: 'Agreement',
+          url: `/components/agreement`,
+        },
         // {
         //   name: 'Check',
         //   url: `/components/check`,
