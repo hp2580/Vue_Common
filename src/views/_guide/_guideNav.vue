@@ -20,10 +20,10 @@ export default function guideNav() {
           name: 'Agreement',
           url: `/components/agreement`,
         },
-        // {
-        //   name: 'Check',
-        //   url: `/components/check`,
-        // },
+        {
+          name: 'Check',
+          url: `/components/check`,
+        },
       ],
     },
   ];
