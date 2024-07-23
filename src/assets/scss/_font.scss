@@ -1,0 +1,155 @@
+@function ptr($size) {
+  @return (
+    font-size: $size*0.1rem,
+    line-height: $size*0.14rem
+  );
+}
+
+$fontLight: 300;
+$fontRegular: 400;
+$fontMedium: 500;
+$fontBold: 700;
+
+$fontWeightGroup: (
+  'light': $fontLight,
+  'regular': $fontRegular,
+  'medium': $fontMedium,
+  'bold': $fontBold
+);
+@each $weightName, $weightValue in $fontWeightGroup {
+  .font_#{$weightName} {
+    font-weight: $weightValue;
+  }
+}
+
+.heading {
+  &_36 {
+    @each $property, $value in ptr(36) {
+      #{$property}: #{$value};
+    }
+  }
+  &_32 {
+    @each $property, $value in ptr(32) {
+      #{$property}: #{$value};
+    }
+  }
+  &_30 {
+    @each $property, $value in ptr(30) {
+      #{$property}: #{$value};
+    }
+  }
+  &_28 {
+    @each $property, $value in ptr(28) {
+      #{$property}: #{$value};
+    }
+  }
+  &_26 {
+    @each $property, $value in ptr(26) {
+      #{$property}: #{$value};
+    }
+  }
+}
+
+.title {
+  &_24 {
+    @each $property, $value in ptr(24) {
+      #{$property}: #{$value};
+    }
+  }
+  &_22 {
+    @each $property, $value in ptr(22) {
+      #{$property}: #{$value};
+    }
+  }
+  &_20 {
+    @each $property, $value in ptr(20) {
+      #{$property}: #{$value};
+    }
+  }
+  &_18 {
+    @each $property, $value in ptr(18) {
+      #{$property}: #{$value};
+    }
+  }
+  &_16 {
+    @each $property, $value in ptr(16) {
+      #{$property}: #{$value};
+    }
+  }
+  &_14 {
+    @each $property, $value in ptr(14) {
+      #{$property}: #{$value};
+    }
+  }
+  &_13 {
+    @each $property, $value in ptr(13) {
+      #{$property}: #{$value};
+    }
+  }
+}
+
+.text {
+  &_18 {
+    @each $property, $value in ptr(18) {
+      #{$property}: #{$value};
+    }
+  }
+  &_16 {
+    @each $property, $value in ptr(16) {
+      #{$property}: #{$value};
+    }
+  }
+  &_14 {
+    @each $property, $value in ptr(14) {
+      #{$property}: #{$value};
+    }
+  }
+  &_13 {
+    @each $property, $value in ptr(13) {
+      #{$property}: #{$value};
+    }
+  }
+  &_12 {
+    @each $property, $value in ptr(12) {
+      #{$property}: #{$value};
+    }
+  }
+  &_11 {
+    @each $property, $value in ptr(11) {
+      #{$property}: #{$value};
+    }
+  }
+  &_10 {
+    @each $property, $value in ptr(10) {
+      #{$property}: #{$value};
+    }
+  }
+}
+
+.button {
+  &_16 {
+    @each $property, $value in ptr(16) {
+      #{$property}: #{$value};
+    }
+  }
+  &_14 {
+    @each $property, $value in ptr(14) {
+      #{$property}: #{$value};
+    }
+  }
+  &_12 {
+    @each $property, $value in ptr(12) {
+      #{$property}: #{$value};
+    }
+  }
+  &_11 {
+    @each $property, $value in ptr(11) {
+      #{$property}: #{$value};
+    }
+  }
+  &_10 {
+    @each $property, $value in ptr(10) {
+      #{$property}: #{$value};
+    }
+  }
+}
