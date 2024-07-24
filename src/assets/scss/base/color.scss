@@ -1,0 +1,69 @@
+$colorGroup : (
+  'white': #ffffff,
+  'black': #000000,
+  'blue-050':#EBF0FF,
+  'blue-100':#DAE2FF,
+  'blue-200':#91A8FF,
+  'blue-300':#476EFF,
+  'blue-400':#0046FF,
+  'blue-500':#143898,
+  'red-050': #FFEBEB,
+  'red-100': #FFCCCC,
+  'red-200': #FF847F,
+  'red-300': #FF4B44,
+  'red-400': #DA1D1D,
+  'red-500': #AF0000,
+  'orange-050': #FFEBE6,
+  'orange-100': #FFC7BA,
+  'orange-200': #FF866A,
+  'orange-300': #F85F3C,
+  'orange-400': #F1461F,
+  'orange-500': #C52500,
+  'yellow-050': #FFF6E3,
+  'yellow-100': #FFDC97,
+  'yellow-200': #FFC147,
+  'yellow-300': #FFA800,
+  'yellow-400': #E08600,
+  'yellow-500': #B16A00,
+  'green-050': #E0F4EF,
+  'green-100': #AEE7DA,
+  'green-200': #44CFAD,
+  'green-300': #17A381,
+  'green-400': #09634D,
+  'green-500': #004534,
+  'bg-light-gray': #F8F8F8,
+  'bg-warm-gray': #F6F6F6,
+  'gray-030': #EEEEEE,
+  'gray-040': #DDDDDD,
+  'gray-050': #CCCCCC,
+  'gray-060': #AAAAAA,
+  'gray-070': #888888,
+  'gray-080': #666666,
+  'gray-090': #333333,
+  'dark-gray-050': #F4F7FC,
+  'dark-gray-100': #EDF0F8,
+  'dark-gray-200': #D4D8E5,
+  'dark-gray-300': #B3B8C9,
+  'dark-gray-400': #676D80,
+  'dark-gray-500': #494F60,
+  'dark-gray-600': #3D4964,
+  'dark-gray-700': #383B5A,
+  'dark-gray-800': #1B1F42,
+);
+
+@each $name, $color in $colorGroup {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .txt-#{$name} {
+    color: $color;
+  }
+}
+
+.bg-steel-blue {
+  background-color: #D0DAE6;
+}
+
+.txt-steel-blue {
+  color: #91A1B2;
+}

@@ -5,12 +5,8 @@ export default function guideNav() {
       title: 'Components',
       nav: [
         {
-          name: 'Swiper',
-          url: `/components/swiper`,
-        },
-        {
-          name: 'Select',
-          url: `/components/select`,
+          name: 'Colors',
+          url: `/components/colors`,
         },
         {
           name: 'Typography',
@@ -19,6 +15,14 @@ export default function guideNav() {
         {
           name: 'Agreement',
           url: `/components/agreement`,
+        },
+        {
+          name: 'Swiper',
+          url: `/components/swiper`,
+        },
+        {
+          name: 'Select',
+          url: `/components/select`,
         },
       ],
     },
