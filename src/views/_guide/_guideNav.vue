@@ -24,6 +24,10 @@ export default function guideNav() {
           name: 'Select',
           url: `/components/select`,
         },
+        {
+          name: 'Button',
+          url: `/components/Button`,
+        },
       ],
     },
   ];

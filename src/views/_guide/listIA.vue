@@ -3,7 +3,7 @@ import { reactive, ref, onMounted, watchEffect } from 'vue'
 import uuTabs from '@/components/uu-components/uuTabs.vue'
 import uuTab from '@/components/uu-components/uuTab.vue'
 import tabsData from '@/utils/jobs/job.index'
-import '@/assets/css/guide.css'
+// import '@/assets/css/guide.css'
 
 const isMobile = ref(false)
 const tableHeader = {

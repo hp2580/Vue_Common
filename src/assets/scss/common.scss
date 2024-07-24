@@ -1,0 +1,86 @@
+@use './font.scss' as *;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.container {
+  .v-icon {
+    // defult size 24px
+    &.export_white {
+      background-image: url('/src/assets/images/icon/icon_24_export_white.svg');
+    }
+  }
+  .v-btn {
+    &.v-btn--size-small,
+    &.v-btn--size-default,
+    &.v-btn--size-large {
+      border-radius: 8px !important;
+      &,
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+      &:focus {
+        outline: 1px solid #000;
+      }
+      &.v-btn--variant-outlined {
+        .v-btn__overlay {
+          display: none;
+        }
+      }
+    }
+    &.v-btn--size-small {
+      @extend .button_14;
+      height: 38px !important;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+    &.v-btn--size-default:not(.v-btn--variant-text) {
+      @extend .button_14;
+      height: 48px !important;
+    }
+    &.v-btn--size-large {
+      @extend .button_16;
+      height: 48px !important;
+      &.v-btn--icon {
+        min-width: 48px !important;
+        width: 48px;
+      }
+    }
+    &.v-btn--variant-text {
+      height: inherit;
+      padding: 0;
+      line-height: 1.2em;
+      border-radius: 0 !important;
+      border-bottom: 1px solid #000;
+      .v-ripple__container,
+      .v-btn__overlay {
+        display: none;
+      }
+    }
+  }
+  .v-btn-group.large {
+    overflow: inherit;
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 0;
+    .v-btn {
+      flex: 1 1 auto;
+      min-width: 30%;
+      &+.v-btn {
+        margin-left: 8px;
+      }
+      &.v-btn--icon {
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
