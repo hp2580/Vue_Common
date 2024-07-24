@@ -23,7 +23,7 @@ const selected = ref(items[0].text)
     <template #container>
       123
     </template> -->
-  <v-select
+  <!-- <v-select
     class="custom-select"
     :items="items"
     :model-value="selected"
@@ -31,7 +31,7 @@ const selected = ref(items[0].text)
     item-title="text"
     @update:model-value="(value) => {selected = value}"
   >
-  </v-select>
+  </v-select> -->
 </template>
 <style lang="scss" scoped>
 </style>

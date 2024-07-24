@@ -5,48 +5,36 @@
   );
 }
 
-$fontLight: 300;
-$fontRegular: 400;
-$fontMedium: 500;
-$fontBold: 700;
-
-$fontWeightGroup: (
-  'light': $fontLight,
-  'regular': $fontRegular,
-  'medium': $fontMedium,
-  'bold': $fontBold
-);
-@each $weightName, $weightValue in $fontWeightGroup {
-  .font_#{$weightName} {
-    font-weight: $weightValue;
-  }
-}
-
 .heading {
   &_36 {
     @each $property, $value in ptr(36) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_32 {
     @each $property, $value in ptr(32) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_30 {
     @each $property, $value in ptr(30) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_28 {
     @each $property, $value in ptr(28) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_26 {
     @each $property, $value in ptr(26) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
 }
 
@@ -55,36 +43,43 @@ $fontWeightGroup: (
     @each $property, $value in ptr(24) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_22 {
     @each $property, $value in ptr(22) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_20 {
     @each $property, $value in ptr(20) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_18 {
     @each $property, $value in ptr(18) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_16 {
     @each $property, $value in ptr(16) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_14 {
     @each $property, $value in ptr(14) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
   &_13 {
     @each $property, $value in ptr(13) {
       #{$property}: #{$value};
     }
+    font-weight: 700;
   }
 }
 
