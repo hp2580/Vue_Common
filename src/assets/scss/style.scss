@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-// folder
-@use 'base';
-@use 'helpers';
-@use 'components'
+@use './font.scss';
+@use './color.scss';
+@use './common.scss';
