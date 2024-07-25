@@ -126,6 +126,11 @@
       @each $property, $value in ptr(16) {
         #{$property}: #{$value};
       }
+      @media (min-width: 1100px) {
+        @each $property, $value in ptr(18) {
+          #{$property}: #{$value};
+        }
+      }
     }
     &_14 {
       @each $property, $value in ptr(14) {

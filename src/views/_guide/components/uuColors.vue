@@ -1,5 +1,8 @@
 <script setup>
 const colors = [
+  'primary',
+  'secondary',
+  'tertiary',
   'white',
   'black',
   'blue-050',
@@ -56,7 +59,7 @@ const colors = [
     <div class="content-body">
       <section class="section">
         <div v-for="color in colors">
-          <span :class="`txt-${color}`">{{ `class: txt-${color}` }}</span>
+          <span :class="`text-${color}`">{{ `class: text-${color}` }}</span>
           <span :class="`bg-${color}`">{{ `class: bg-${color}` }}</span>
         </div>
         <div>

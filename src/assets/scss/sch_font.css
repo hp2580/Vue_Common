@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: 'SpoqaHanSansNeo';
+	src: local('SpoqaHanSansNeo1'),
+	    url('/src/assets/fonts/shcard/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Thin.woff') format('woff'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Thin.woff') format('truetype'),
+        url('/src/assets/fonts/SpoqaHanSansNeo-Thin.eot') format('embeded-opentype');
+	font-weight: 100;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'SpoqaHanSansNeo';
+	src: local('SpoqaHanSansNeo'),
+	    url('/src/assets/fonts/shcard/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Light.woff') format('woff'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Light.woff') format('truetype'),
+        url('/src/assets/fonts/SpoqaHanSansNeo-Light.eot') format('embeded-opentype');
+	font-weight: 200;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'SpoqaHanSansNeo';
+	src: local('SpoqaHanSansNeo2'),
+        url('/src/assets/fonts/shcard/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Regular.woff') format('woff'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Regular.woff') format('truetype'),
+        url('/src/assets/fonts/SpoqaHanSansNeo-Regular.eot') format('embeded-opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'SpoqaHanSansNeo';
+	src: local('SpoqaHanSansNeo'),
+        url('/src/assets/fonts/shcard/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Medium.woff') format('woff'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Medium.woff') format('truetype'),
+        url('/src/assets/fonts/SpoqaHanSansNeo-Medium.eot') format('embeded-opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'SpoqaHanSansNeo';
+	src: local('SpoqaHanSansNeo'),
+        url('/src/assets/fonts/shcard/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Bold.woff') format('woff'),
+	    url('/src/assets/fonts/SpoqaHanSansNeo-Bold.woff') format('truetype'),
+        url('/src/assets/fonts/SpoqaHanSansNeo-Bold.eot') format('embeded-opentype');
+	font-weight: 900;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'OneShinhan';
+	src: local('OneShinhan'),
+        url('/src/assets/fonts/shcard/OneShinhanLight.woff2') format('woff2'),
+	    url('/src/assets/fonts/OneShinhanLight.woff') format('woff'),
+	    url('/src/assets/fonts/OneShinhanLight.woff') format('truetype'),
+        url('/src/assets/fonts/OneShinhanLight.eot') format('embeded-opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'OneShinhan';
+	src: local('OneShinhan'),
+        url('/src/assets/fonts/shcard/OneShinhanMedium.woff2') format('woff2'),
+	    url('/src/assets/fonts/OneShinhanMedium.woff') format('woff'),
+	    url('/src/assets/fonts/OneShinhanMedium.woff') format('truetype'),
+        url('/src/assets/fonts/OneShinhanMedium.eot') format('embeded-opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'OneShinhan';
+	src: local('OneShinhan'),
+        url('/src/assets/fonts/shcard/OneShinhanBold.woff2') format('woff2'),
+	    url('/src/assets/fonts/OneShinhanBold.woff') format('woff'),
+	    url('/src/assets/fonts/OneShinhanBold.woff') format('truetype'),
+        url('/src/assets/fonts/OneShinhanBold.eot') format('embeded-opentype');
+	font-weight: 900;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'ShinhanCard';
+	src: local('ShinhanCard'),
+        url('/src/assets/fonts/shcard/ShinhanCardL.woff2') format('woff2'),
+	    url('/src/assets/fonts/ShinhanCardL.woff') format('woff'),
+	    url('/src/assets/fonts/ShinhanCardL.ttf') format('truetype'),
+        url('/src/assets/fonts/ShinhanCardL.eot') format('embeded-opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'ShinhanCard';
+	src: local('ShinhanCard'),
+        url('/src/assets/fonts/shcard/ShinhanCardM.woff2') format('woff2'),
+	    url('/src/assets/fonts/ShinhanCardM.woff') format('woff'),
+	    url('/src/assets/fonts/ShinhanCardM.ttf') format('truetype'),
+        url('/src/assets/fonts/ShinhanCardM.eot') format('embeded-opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'ShinhanCard';
+	src: local('ShinhanCard'),
+        url('/src/assets/fonts/shcard/ShinhanCardB.woff2') format('woff2'),
+	    url('/src/assets/fonts/ShinhanCardB.woff') format('woff'),
+	    url('/src/assets/fonts/ShinhanCardB.woff') format('truetype'),
+        url('/src/assets/fonts/ShinhanCardB.eot') format('embeded-opentype');
+	font-weight: 900;
+	font-style: normal;
+	font-display:swap;
+}
+@font-face{
+	font-family: 'signature1';
+	src: url('/src/assets/fonts/GongPilM.eot');
+	src: url('/src/assets/fonts/GongPilM.eot?#iefix') format('embedded-opentype');
+	src: url('/src/assets/fonts/GongPilM.woff') format('woff');
+	src: url('/src/assets/fonts/GongPilM.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'signature2';
+	src: url('/src/assets/fonts/Blacksword.eot');
+	src: url('/src/assets/fonts/Blacksword.eot?#iefix') format('embedded-opentype');
+	src: url('/src/assets/fonts/Blacksword.woff') format('woff');
+	src: url('/src/assets/fonts/Blacksword.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

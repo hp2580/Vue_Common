@@ -1,4 +1,7 @@
 $colorGroup : (
+  'primary': #476EFF,
+  'secondary': #D0DAE6,
+  'tertiary': #1B1F42,
   'white': #ffffff,
   'black': #000000,
   'blue-050':#EBF0FF,
@@ -50,20 +53,19 @@ $colorGroup : (
   'dark-gray-700': #383B5A,
   'dark-gray-800': #1B1F42,
 );
-
-@each $name, $color in $colorGroup {
-  .bg-#{$name} {
-    background-color: $color;
+body {
+  @each $name, $color in $colorGroup {
+    .bg-#{$name} {
+      background-color: $color !important;
+    }
+    .text-#{$name} {
+      color: $color !important;
+    }
   }
-  .txt-#{$name} {
-    color: $color;
+  .bg-steel-blue {
+    background-color: #D0DAE6;
   }
-}
-
-.bg-steel-blue {
-  background-color: #D0DAE6;
-}
-
-.txt-steel-blue {
-  color: #91A1B2;
+  .text-steel-blue {
+    color: #91A1B2;
+  }
 }
