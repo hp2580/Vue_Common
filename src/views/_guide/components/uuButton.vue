@@ -1,19 +1,52 @@
+<script setup></script>
 <template>
     <v-container>
       <h1 class="heading_36">icon</h1>
       <v-row>
-        <v-col cols="auto" class="bg-gray-050">
+        <v-col cols="12" class="bg-gray-050">
           <p class="title_16">icon size small : 16px</p>
-          <v-icon size="small" class="export_white"></v-icon>
           <v-icon size="small" class="arrow_black"></v-icon>
+          <v-icon size="small" class="question_gray"></v-icon>
           <p class="title_16">icon size default : 24px</p>
           <v-icon class="arrow_black"></v-icon>
           <v-icon class="export_white"></v-icon>
           <v-icon class="top_black"></v-icon>
           <v-icon class="search_white"></v-icon>
           <v-icon class="heart_white"></v-icon>
+          <v-icon class="close_black"></v-icon>
+          <v-icon class="family_card_01"></v-icon>
+          <v-icon class="family_card_02"></v-icon>
+          <v-icon class="family_card_03"></v-icon>
+          <v-icon class="family_card_04"></v-icon>
           <p class="title_16">icon size large : 32px</p>
           <v-icon size="large" class="export_white"></v-icon>
+          <p class="title_16">icon size etc</p>
+          <p class="text_14">select open icon</p>
+          <v-icon class="open_black"></v-icon>
+          <p class="text_14">input delete icon</p>
+          <v-icon class="delete_gray"></v-icon>
+        </v-col>
+        <v-divider class="my-4"></v-divider>
+        <v-col cols="12">
+          <p class="title_16">icon button</p>
+          <button type="button" aria-label="닫기">
+            <v-icon class="close_black"></v-icon>
+          </button>
+          <a href="#" aria-label="닫기">
+            <v-icon class="close_black"></v-icon>
+          </a>
+          <button type="button" aria-label="삭제">
+            <v-icon class="delete_gray"></v-icon>
+          </button>
+          <a href="#" aria-label="삭제">
+            <v-icon class="delete_gray"></v-icon>
+          </a>
+          <button type="button" aria-label="도움말">
+            <v-icon size="small" class="question_gray"></v-icon>
+          </button>
+          <a href="#" aria-label="도움말">
+            <v-icon size="small" class="question_gray"></v-icon>
+          </a>
         </v-col>
       </v-row>
       <h1 class="heading_36 mt-10">button</h1>
@@ -62,6 +95,17 @@
         </v-col>
 
         <v-col cols="12">
+          <p class="title_22 mt-5">v-btn x-small</p>
+          <v-btn size="x-small" color="primary">XSmall Button</v-btn>
+          <v-btn size="x-small" color="secondary">XSmall Button</v-btn>
+          <v-btn size="x-small" color="tertiary">영문전환</v-btn>
+          <v-btn size="x-small" color="black" variant="outlined" rounded="xs">PDF 다운로드</v-btn>
+          <v-btn size="x-small" color="black" variant="outlined" rounded="xl">
+            <v-icon class="rotate_black"></v-icon>
+            뒷면
+          </v-btn>
+        </v-col>
+        <v-col cols="12">
           <p class="title_22 mt-5">v-btn small</p>
           <v-btn size="small" color="primary">Small Button</v-btn>
           <v-btn size="small" color="primary" disabled>Small Button</v-btn>
@@ -75,12 +119,17 @@
         </v-col>
   
         <v-col cols="12">
-          <p class="title_22 mt-5">v-btn default</p>
-          <v-btn color="secondary">default Button</v-btn>
-          <v-btn color="secondary" disabled>default Button</v-btn>
+          <p class="title_22 mt-5">v-btn regular</p>
+          <v-btn color="secondary">regular Button</v-btn>
+          <v-btn color="secondary" disabled>regular Button</v-btn>
           <br/>
-          <v-btn color="black" variant="outlined">default Button</v-btn>
-          <v-btn color="black" variant="outlined" disabled>default Button</v-btn>
+          <v-btn color="black" variant="outlined">regular Button</v-btn>
+          <v-btn color="black" variant="outlined" disabled>regular Button</v-btn>
+          <br/>
+          <v-btn-group class="regular">
+            <v-btn color="secondary">regular Button</v-btn>
+            <v-btn color="secondary">regular Button</v-btn>
+          </v-btn-group>
         </v-col>
         
         <v-col cols="12">
@@ -125,6 +174,7 @@
         </v-col>
   
         <v-col cols="auto">
+          <p class="title_22 mt-5">v-btn x-large</p>
           <v-btn size="x-large" icon color="tertiary">
             <v-icon class="search_white"></v-icon>
           </v-btn>
@@ -149,9 +199,6 @@
       </v-row>
     </v-container>
   </template>
-  <script setup>
-    
-  </script>
   <style lang="scss" scoped>
   .v-col {
     &>.v-btn {
