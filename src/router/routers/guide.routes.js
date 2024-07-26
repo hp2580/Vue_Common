@@ -7,6 +7,7 @@ const colors = () => import('@/views/_guide/components/uuColors.vue')
 const button = () => import('@/views/_guide/components/uuButton.vue')
 const tab = () => import('@/views/_guide/components/uuTabs.vue')
 const tooltip = () => import('@/views/_guide/components/uuTooltip.vue')
+const form = () => import('@/views/_guide/components/uuForm.vue')
 
 // uu-components
 export default {
@@ -22,5 +23,6 @@ export default {
     { component: button, path: 'button' },
     { component: tab, path: 'tab' },
     { component: tooltip, path: 'tooltip' },
+    { component: form, path: 'form' },
   ],
 }

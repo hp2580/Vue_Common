@@ -25,6 +25,10 @@
           <v-icon class="open_black"></v-icon>
           <p class="text_14">input delete icon</p>
           <v-icon class="delete_gray"></v-icon>
+          <p class="text_14">카드 뒷면</p>
+          <v-icon class="rotate_black"></v-icon>
+          <p class="text_14">mastercard</p>
+          <v-icon class="mastercard"></v-icon>
         </v-col>
         <v-divider class="my-4"></v-divider>
         <v-col cols="12">
@@ -190,7 +194,7 @@
             </v-btn>
           </v-btn-group>
         </v-col>
-        <v-col cols="auto" class="bg-gray-050">
+        <v-col cols="12" class="bg-gray-050">
           <v-btn size="x-large" icon>
             <v-icon class="top_black"></v-icon>
           </v-btn>

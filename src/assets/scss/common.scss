@@ -29,6 +29,8 @@ body {
     width: 2.4rem;
     height: 2.4rem;
     background-size: contain;
+    background-position: center center;
+    background-position: center center;
     &.v-icon--size-small {
       width: 1.6rem !important;
       height: 1.6rem !important;
@@ -45,19 +47,19 @@ body {
       background-image: url('/src/assets/images/icon/icon_16_question_gray.svg');
     }
     // 20px
+    &.rotate_black,
+    &.open_black,
     &.delete_gray {
       width: 2rem;
       height: 2rem;
+    }
+    &.delete_gray {
       background-image: url('/src/assets/images/icon/icon_20_delete_gray.svg');
     }
     &.open_black {
-      width: 2rem;
-      height: 2rem;
       background-image: url('/src/assets/images/icon/icon_20_open_black.svg');
     }
     &.rotate_black {
-      width: 2rem;
-      height: 2rem;
       background-image: url('/src/assets/images/icon/icon_20_rotate_black.svg');
     }
     // 24px
@@ -87,6 +89,11 @@ body {
     }
     &.family_card_04 {
       background-image: url('/src/assets/images/icon/icon_24_family_card_04.svg');
+    }
+    &.mastercard {
+      width: 3.2rem;
+      height: 2rem;
+      background-image: url('/src/assets/images/icon/icon_32_20_mastercard.svg');
     }
   }
   // btn
@@ -283,6 +290,143 @@ body {
     }
     &.underline {
       border-bottom: 0.1rem solid map-get($colorGroup, 'gray-030');
+    }
+  }
+  // checkbox
+  .v-checkbox.v-input {
+    display: inline-block;
+    @extend .text_16;
+    .v-selection-control {
+      min-height: inherit;
+      align-items: flex-start;
+      .v-icon {
+        background-image: url('/src/assets/images/icon/icon_checkbox_off.svg');
+        svg {
+          display: none;
+        }
+      }
+      // disabled
+      &.v-selection-control--disabled {
+        opacity: 1;
+        .v-icon {
+          background-image: url('/src/assets/images/icon/icon_checkbox_disabled_off.svg');
+        }
+      }
+      // checked
+      &.v-selection-control--dirty {
+        .v-icon {
+          background-image: url('/src/assets/images/icon/icon_checkbox_on.svg');
+        }
+        // disabled
+        &.v-selection-control--disabled {
+          .v-icon {
+            background-image: url('/src/assets/images/icon/icon_checkbox_disabled_on.svg');
+          }
+        }
+      }
+      .v-selection-control__wrapper {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+      .v-label {
+        min-height: 2.4rem;
+        padding-left: .8rem;
+        padding-top: .2rem;
+        font-size: inherit;
+        opacity: 1;
+      }
+    }
+    &.small {
+      .v-selection-control {
+        .v-icon {
+          background-image: url('/src/assets/images/icon/icon_checkbox_sm_off.svg');
+        }
+        // checked
+        &.v-selection-control--dirty {
+          .v-icon {
+            background-image: url('/src/assets/images/icon/icon_checkbox_sm_on.svg');
+          }
+        }
+        &.v-selection-control--disabled {
+          opacity: 0.5;
+        }
+      }
+      .v-label {
+        padding-left: .4rem;
+      }
+    } 
+  }
+  // radio group button type
+  .v-radio-group.type_button {
+    * {
+      // outline: 1px solid pink;
+    }
+    .v-selection-control-group {
+      flex-direction: row;
+      .v-radio {
+        position: relative;
+        @extend .button_14;
+        &+.v-radio {
+          margin-left: .8rem;
+        }
+        // icon
+        .v-selection-control__wrapper {
+          overflow: hidden;
+          position:absolute;
+          width: 0;
+          height: 0;
+          z-index: -1;
+        }
+        .v-label {
+          display: flex;
+          width: 100%;
+          min-height: 4.8rem;
+          border-radius: .8rem;
+          text-align: center;
+          font-size: initial;
+          font-weight: bold;
+          
+          color: #38395A;
+          opacity: 1;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #DDDDDD;
+        }
+        // selected
+        &.v-selection-control--dirty {
+          .v-label {
+            border: 1px solid #38395A !important;
+            color:#000;
+            box-shadow: 0 4px 4px 0 rgba(#000, 10%);
+            .radio_button {
+              min-height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .radio_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.6rem 2rem;
+    p {
+      @extend .button_14;
+      font-weight: bold;
+      color: #000;
+    }
+    p + div {
+      @extend .button_14;
+      margin-top: .8rem;
+    }
+    @media (min-width: 1100px) {
+      flex-direction: row;
+      justify-content: space-between;
+      p + div {
+        margin-top: 0;
+      }
     }
   }
 }

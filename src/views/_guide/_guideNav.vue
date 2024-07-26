@@ -36,6 +36,10 @@ export default function guideNav() {
           name: 'Tooltip',
           url: `/components/tooltip`,
         },
+        {
+          name: 'Form',
+          url: `/components/form`,
+        },
       ],
     },
   ];
