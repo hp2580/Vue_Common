@@ -1,5 +1,5 @@
-@use 'base' as *;
-@use 'helpers' as *;
+// @use 'base' as *;
+// @use 'helpers' as *;
 // @use 'vendors' as *;
 
 // guide에서만 사용
@@ -8,6 +8,8 @@ $secondary: #373f50;
 $line1: #eee;
 $line2: #ddd;
 $bg1: #f6f6f6;
+$white: #fff;
+$black: #000;
 
 /* guide */
 .guide-wrap {
@@ -28,7 +30,7 @@ $bg1: #f6f6f6;
       a,
       button {
         display: block;
-        font-size: 3rem;
+        font-size: 3rem !important;
         color: $white;
       }
     }
@@ -88,7 +90,6 @@ $bg1: #f6f6f6;
         width: 3.4rem;
         height: 3.4rem;
         margin-left: 1rem;
-        @include icon-bg(24, 'menu_white');
       }
     }
   }
@@ -464,7 +465,6 @@ $bg1: #f6f6f6;
           }
 
           caption {
-            @include sr-only;
           }
 
           .table-wrap {
@@ -592,7 +592,6 @@ $bg1: #f6f6f6;
             background-color: $bg1;
 
             .font-area-title {
-              @include fontHeight(1.6);
             }
 
             .font-box {
@@ -600,7 +599,6 @@ $bg1: #f6f6f6;
               grid-template-columns: 1fr 1fr 0.6fr 0.6fr;
               width: 60rem;
               margin-top: 1rem;
-              @include fontHeight(2);
             }
           }
         }
@@ -650,7 +648,6 @@ $bg1: #f6f6f6;
   .size {
     display: block;
     margin: 2rem 0 1rem;
-    @include fontHeight(1.6);
   }
 
   .icon-list {
@@ -701,11 +698,10 @@ $bg1: #f6f6f6;
 .btn-icon-exam {
   width: 3.4rem;
   height: 3.4rem;
-  @include icon-bg(28, 'close');
 }
 
 // mobile
-@include mobile(0, 1200px) {
+@media (max-width: 1200px) {
   .guide-wrap {
     &.is-mobile {
       nav {
@@ -775,7 +771,6 @@ $bg1: #f6f6f6;
             .font-area {
               .font-area-title {
                 margin-top: 1rem;
-                @include fontHeight(1.6);
               }
 
               .font-box {
@@ -923,7 +918,7 @@ $bg1: #f6f6f6;
     height: 2.4rem;
     margin-bottom: 0.5rem;
     padding: 0 0.8rem;
-    background-color: $bg2;
+    background-color: $bg1;
     border-radius: 0.4rem;
     font-size: 1.2rem;
 

@@ -1,4 +1,5 @@
 @use './font.scss' as *;
+@use './color.scss' as *;
 
 html {
   font-size: 62.5% !important;
@@ -247,6 +248,41 @@ body {
           background-color: #494F60;
         }
       }
+    }
+  }
+  .v-tabs {
+    max-width: 36rem;
+    height: inherit;
+    .v-slide-group__prev,
+    .v-slide-group__next {
+      display: none;
+    }
+    .v-tab {
+      min-width: 7.4rem;
+      height: 4.2rem !important;
+      padding: 0 1.2rem;
+      &.v-btn {
+        min-width: auto;
+      }
+      &.title_18 {
+        font-weight: 400;
+      }
+      &--selected {
+        &.title_18 {
+          font-weight: 700;
+        }
+      }
+      .v-btn__content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      &__slider {
+        width: 100%;
+      }
+    }
+    &.underline {
+      border-bottom: 0.1rem solid map-get($colorGroup, 'gray-030');
     }
   }
 }
