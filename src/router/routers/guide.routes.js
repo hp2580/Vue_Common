@@ -5,6 +5,8 @@ const typography = () => import('@/views/_guide/components/uuTypography.vue')
 const agreement = () => import('@/views/_guide/components/uuAgreement.vue')
 const colors = () => import('@/views/_guide/components/uuColors.vue')
 const button = () => import('@/views/_guide/components/uuButton.vue')
+const tab = () => import('@/views/_guide/components/uuTabs.vue')
+const tooltip = () => import('@/views/_guide/components/uuTooltip.vue')
 
 // uu-components
 export default {
@@ -18,5 +20,7 @@ export default {
     { component: select, path: 'select' },
     { component: agreement, path: 'agreement' },
     { component: button, path: 'button' },
+    { component: tab, path: 'tab' },
+    { component: tooltip, path: 'tooltip' },
   ],
 }

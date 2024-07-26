@@ -28,6 +28,14 @@ export default function guideNav() {
           name: 'Button',
           url: `/components/Button`,
         },
+        {
+          name: 'Tab',
+          url: `/components/tab`,
+        },
+        {
+          name: 'Tooltip',
+          url: `/components/tooltip`,
+        },
       ],
     },
   ];
