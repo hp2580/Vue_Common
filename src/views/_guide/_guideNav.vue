@@ -40,6 +40,10 @@ export default function guideNav() {
           name: 'Form',
           url: `/components/form`,
         },
+        {
+          name: 'Divider',
+          url: `/components/divider`,
+        },
       ],
     },
   ];

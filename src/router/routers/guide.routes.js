@@ -8,6 +8,7 @@ const button = () => import('@/views/_guide/components/uuButton.vue')
 const tab = () => import('@/views/_guide/components/uuTabs.vue')
 const tooltip = () => import('@/views/_guide/components/uuTooltip.vue')
 const form = () => import('@/views/_guide/components/uuForm.vue')
+const divider = () => import('@/views/_guide/components/uuDivider.vue')
 
 // uu-components
 export default {
@@ -17,6 +18,7 @@ export default {
   children: [
     { component: colors, path: 'colors' },
     { component: typography, path: 'typography' },
+    { component: divider, path: 'divider'},
     { component: swiper, path: 'swiper' },
     { component: select, path: 'select' },
     { component: agreement, path: 'agreement' },

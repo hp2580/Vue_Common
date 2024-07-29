@@ -429,4 +429,54 @@ body {
       }
     }
   }
+  .v-tooltip {
+    .custom-tooltip {
+      max-width: 21.6rem !important;
+      padding: 0 !important;
+      border: 0.1rem solid #000; // 컴포넌트 확인용 임시 border
+      background-color: #fff !important;
+      color: #000 !important;
+      &-content {
+        position: relative;
+        padding: 1.6rem 3.6rem 1.6rem 1.6rem;
+        &-text {
+          .text_12 {
+            font-weight: 400;
+            &.title {
+              font-weight: 700;
+            }
+          }
+        }
+        .btn-close {
+          position: absolute;
+          top: 1.6rem;
+          right: 1.2rem;
+          width: 1.6rem;
+          min-width: auto;
+          height: 1.6rem !important;
+          padding: 0;
+          .v-icon {
+            width: 100% !important;
+            height: 100% !important; 
+          }
+        }
+      }
+    }
+  }
+  .v-divider {
+    opacity: 1;
+    border-color: #eee;
+    border-top-width: 0.1rem;
+    &.v-theme {
+      &--dashed {
+        border-top-style: dotted;
+      }
+      &--large {
+        border-top-width: 1.2rem;
+      }
+    }
+    &--vertical {
+      height: 3rem;
+    }
+  }
 }

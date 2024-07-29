@@ -4,7 +4,7 @@
     line-height: $size*0.14rem
   );
 }
-.container {
+body {
   .heading {
     &_36 {
       @each $property, $value in ptr(36) {
