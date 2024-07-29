@@ -11,10 +11,10 @@ const content = {
   <div class="content-body">
     <section class="section">
       <template v-for="(value, key) in content">
-        <div v-if="key == 'heading'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}-${item}` }}</div>
-        <div v-else-if="key == 'title'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}-${item}` }}</div>
-        <div v-else-if="key == 'text'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}-${item}` }}</div>
-        <button v-else type="button" v-for="item in value" :class="`${key}_${item}`" :style="{display: 'block'}">class: {{ `${key}-${item}` }}</button>
+        <div v-if="key == 'heading'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}_${item}` }}</div>
+        <div v-else-if="key == 'title'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}_${item}` }}</div>
+        <div v-else-if="key == 'text'" v-for="item in value" :class="`${key}_${item}`">class: {{ `${key}_${item}` }}</div>
+        <button v-else type="button" v-for="item in value" :class="`${key}_${item}`" :style="{display: 'block'}">class: {{ `${key}_${item}` }}</button>
       </template>
     </section>
   </div>

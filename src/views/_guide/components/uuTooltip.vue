@@ -22,12 +22,6 @@ function handleTooltip(action) {
       :open-on-click="true"
     >
       <template v-slot:activator="{ props }">
-        <!-- <v-btn
-          v-bind="props"
-          @click="handleTooltip('open')"
-        >
-          <v-icon size="small" class="question_gray"></v-icon>
-        </v-btn> -->
         <button 
           type="button" 
           aria-label="도움말"

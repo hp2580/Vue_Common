@@ -455,6 +455,7 @@ body {
           min-width: auto;
           height: 1.6rem !important;
           padding: 0;
+          pointer-events: auto;
           .v-icon {
             width: 100% !important;
             height: 100% !important; 
@@ -477,6 +478,19 @@ body {
     }
     &--vertical {
       height: 3rem;
+    }
+  }
+  .v-snackbar {
+    &__wrapper {
+      bottom: 7.2rem;
+      max-width: 28rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.8rem 1.6rem 0 rgba(#000, 0.4);
+      background-color: rgba(#050F26, 0.8);
+    }
+    &__content {
+      padding: 1rem 1.6rem 0.8rem;
+      text-align: center;
     }
   }
 }

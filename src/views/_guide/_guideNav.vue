@@ -44,6 +44,10 @@ export default function guideNav() {
           name: 'Divider',
           url: `/components/divider`,
         },
+        {
+          name: 'Toast',
+          url: `/components/toast`,
+        },
       ],
     },
   ];

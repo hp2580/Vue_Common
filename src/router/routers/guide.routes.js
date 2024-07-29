@@ -9,6 +9,7 @@ const tab = () => import('@/views/_guide/components/uuTabs.vue')
 const tooltip = () => import('@/views/_guide/components/uuTooltip.vue')
 const form = () => import('@/views/_guide/components/uuForm.vue')
 const divider = () => import('@/views/_guide/components/uuDivider.vue')
+const toast = () => import('@/views/_guide/components/uuToast.vue')
 
 // uu-components
 export default {
@@ -26,5 +27,6 @@ export default {
     { component: tab, path: 'tab' },
     { component: tooltip, path: 'tooltip' },
     { component: form, path: 'form' },
+    { component: toast, path: 'toast' },
   ],
 }
